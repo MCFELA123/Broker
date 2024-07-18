@@ -1,0 +1,357 @@
+.ltr-guy {
+    position: absolute;
+    z-index: -1;
+    transform: translateY(-5em);
+}
+
+.rtl-alien {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    transform: translateY(16em);
+}
+
+.foundation-guy  {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    transform: translateY(12em);
+}
+
+.foundation-alien  {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    transform: translateY(2.5em);
+}
+
+.card-gold-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card-gold {
+    width: 10em;
+    height: 6em;
+    border-radius: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    float: left;
+    margin-left: 2em;
+}
+
+.twit-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card-twit {
+    width: 18em;
+    height: 24em;
+    margin-left: 2em;
+    border-radius: 1.5em;
+    cursor: pointer;
+    transition: .3s ease;
+    transition: .2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+
+.card-twit:first-child {
+    margin-left: 0;
+    transition: .3s ease;
+}
+
+.twit-content {
+    width: 85%;
+    transition: .3s ease;
+    height: 85%;
+    text-align: start;
+    border-radius: inherit;
+}
+
+.dark-texts {
+    transition: .3s ease;
+ color: white;
+}
+
+.twits {
+    width: 96%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: inherit;
+    height: 12.5em;
+    transition: .3s ease;
+    background-position: center;
+    background-size: cover;
+    background-image: url(/src/icons/0.svg);
+    margin: 0 auto;
+}
+
+.twits-1 {
+    width: 96%;
+    border-radius: inherit;
+    height: 12.5em;
+    background-position: center;
+    background-size: cover;
+    background-image: url(/src/icons/1.svg) !important;
+    margin: 0 auto;
+}
+
+.twits-2 {
+    width: 96%;
+    border-radius: inherit;
+    height: 12.5em;
+    transition: .3s ease;
+    background-position: center;
+    background-size: cover;
+    background-image: url(/src/icons/2.svg) !important;
+    margin: 0 auto;
+}
+
+.twit-content svg {
+    border-radius: inherit;
+    }
+
+    .ttt {
+        margin-top: 7px;
+    }
+
+    .card-prize {
+        width: 50em;
+        height: 21em;
+        margin: 0 auto;
+        transition: .3s ease;
+        border-radius: 3em;
+        background: white;
+    }
+
+    .card-prize .prize-card {
+        width: 50%;
+        float: left;
+        transition: .3s ease;
+        height: 21em;
+    }
+
+    .card-prize  .prize-card:first-child {
+        border-radius: 3em 0 0 3em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-prize  .prize-card:last-child {
+        border-radius: 0 3em 3em 0;
+        background: #ebe9fe;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-content {
+        border-radius: 3em 0 0 3em;
+        width: 80%;
+        height: 75%;
+        transition: .3s ease;
+        text-align: start;
+    }
+
+    .card-content text {
+        line-height: 1.5em;
+        transition: .3s ease;
+    }
+
+    .rtl-virus {
+        position: absolute;
+        right: 0;
+        transform: translateY(-3em);
+    }
+
+    .ltr-virus {
+        position: absolute;
+        left: 0;
+        transform: translateY(3em);
+    }
+
+    .bg-none {
+        background-image: none;
+    }
+
+    .line {
+        line-height: 1.5em;
+    }
+
+    .calender {
+        width: 7.3em;
+        height: 8em;
+        border-radius: 7px;
+        text-align: center;
+        transition: .3s ease;
+        background: white;
+    }
+
+    .cal-head {
+        width: inherit;
+        height: 2em;
+        transition: .3s ease;
+        border-radius: 7px 7px 0 0;
+        background: red;
+    }
+
+    .cal-subhead {
+        width: inherit;
+        height: 1em;
+        transition: .3s ease;
+        background: #ffbbbb;
+    }
+
+    .hook {
+        width: 90%;
+        transition: .3s ease;
+        height: 80%;
+        margin: 0 auto;
+    }
+
+    .hook .hooks {
+        width: 15px;
+        height: 15px;
+        transition: .3s ease;
+        border-radius: 1em;
+        transform: translateY(10px);
+    }
+
+    .hook .hooks .hooker {
+        height: 1.2em;
+        transform: translateY(-12px) translateX(3.6px);
+        box-shadow: 0 3px 4px -2.5px #00000058;
+        display: grid;
+        transition: .3s ease;
+        justify-content: center;
+        background: white;
+        border-radius: 1em;
+        width: 7px;
+        z-index: 9999;
+    }
+
+    .hooks:first-child {
+        float: left;
+        margin-left: 10px;
+    }
+
+    .hooks:last-child {
+        float: right;
+        margin-right: 10px;
+    }
+
+    .news {
+        width: 100%;
+        height: 215px;
+        background: #42307d;
+    }
+
+    .news-letter {
+        width: 90%;
+        height: 215px;
+        transform: translateY(-6.7em);
+        box-shadow: 0 10px 2.5em -2em #000000be;
+        margin: 0 auto;
+        border-radius: 1.2em;
+        background: white;
+    }
+
+    .news-letter .news-room {
+        width: 50%;
+        height: inherit;
+        float: left;
+    }
+
+    .news-details {
+        width: 85%;
+        height: 85%;
+        text-align: start;
+    }
+
+    .news-bg {
+        width: 100%;
+        height: 215px;
+        transition: .3s ease;
+        opacity: 0;
+        transform: translateY(-100%);
+        position: absolute;
+        background: white;
+    }
+
+    .news-room:first-child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1.2em 0 0 1.2em;
+    }
+
+    .news-room:last-child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0 1.2em 1.2em 0;
+    }
+
+    .input-email {
+        margin-top: 0.25em;
+        transform: translateY(10px);
+    }
+
+    .input-email input {
+        width: 70%;
+        height: 3em;
+        text-indent: 1em;
+        outline: 0;
+        border-radius: 8px;
+        transform: translateY(-6px);
+        border: 1.7px solid #a7adbb60;
+    }
+
+    .input-email input::placeholder {
+        color: #7d8496e9;
+        font-size: 17px;
+        transform: translateY(2px);
+    }
+
+    .subscribe-btn {
+        height: 3.4em;
+    }
+    
+    .priv-01 {
+        display: none;
+        margin-top: 10px;
+    }
+    
+    .priv-02 {
+        margin-top: 3px;
+    }
+
+    .break {
+        display: none;
+    }
+
+    .m-up10 {
+        transform: translateY(-3.5px) !important;
+    }
+
+    
+    .m-up30 {
+        transform: translateY(-7.5px) !important;
+    }
+
+    .slideDown {
+        position: fixed;
+    }
+
+    .slideUp {
+        position: absolute;
+    }

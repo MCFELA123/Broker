@@ -1,0 +1,453 @@
+body {
+  width: 100%;
+  font-family: fontReg;
+  position: absolute;
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
+  margin: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.center {
+  width: 95%;
+  margin: 0 auto;
+}
+
+@font-face {
+    font-family: fontReg;
+    src: url(/src/fonts/SF-Pro-Rounded-Semibold.otf);
+  }
+  
+  text {
+    font-family: fontReg;
+  }
+
+  @font-face {
+    font-family: fontLight;
+    src: url(/src/fonts/SF-Pro-Rounded-Medium.otf);
+  }
+
+  text {
+    font-family: fontReg;
+  }
+
+  @font-face {
+    font-family: fontR;
+    src: url(/src/fonts/SF-Pro-Rounded-Regular.otf);
+  }
+  
+  .reg {
+    font-family: fontR;
+  }
+
+  
+  @font-face {
+    font-family: fontLyte;
+    src: url(/src/fonts/SF-Pro-Rounded-Light.otf);
+  }
+  
+  .lyte {
+    font-family: fontLyte;
+  }
+
+@font-face {
+    font-family: fontFam;
+    src: url(/src/fonts/SF-Pro-Rounded-Light.otf);
+  }
+  
+  p {
+    font-family: fontFam;
+  }
+
+  @font-face {
+    font-family: fontHeavy;
+    src: url(/src/fonts/SF-Pro-Rounded-Heavy.otf);
+  }
+  
+  .heavy {
+    font-family: fontHeavy;
+  }
+
+  .sm {
+    font-size: 18px !important;
+  }
+
+.danger {
+    color: #F67656;
+}
+
+.h2 {
+    font-size: 2.5em;
+}
+
+.h3 {
+    font-size: 2.3em;
+}
+
+.h3-4 {
+    font-size: 1.8em;
+}
+
+.h4 {
+    font-size: 1.5em;
+}
+
+.h5 {
+    font-size: 1.4em;
+}
+
+.h6 {
+  font-size: 1.1em;
+}
+
+.h7 {
+  font-size: .9em;
+}
+
+.scl-9 {
+  scale: .9;
+}
+
+.bold {
+    font-family: fontBold;
+}
+
+.heavy {
+    font-family: fontHeavy;
+}
+
+.regular {
+    font-size: 2em !important;
+}
+
+.left {
+  float: left;
+}
+
+
+.interface {
+  width: 100%;
+  overflow: scroll;
+  padding: 1.5em;
+  padding-top: 2em;
+  border-radius: 1em;
+  background: #F7F9FD;
+}
+
+.head {
+  width: 100%;
+  height: 2em;
+}
+
+.head .card-head {
+  height: inherit;
+  text-align: center;
+  float: left;
+  border-radius: 7px;
+  width: 75%;
+}
+
+.head .card-head:first-child {
+  width: 10%;
+}
+
+.head .card-head:last-child {
+  width: 10%;
+}
+
+.head .card-head .user {
+  cursor: pointer;
+}
+
+.head .card-head:last-child img {
+  cursor: pointer;
+}
+
+.user {
+  width: 2.7em;
+  height: 2.7em;
+  border-radius: 2em;
+  position: absolute;
+  background: #ffdce2;
+  border: 3px solid white;
+  box-shadow: 0 0 1.5em -7px #0000003e;
+}
+
+.user img {
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+}
+
+.user .user-label {
+  width: 11px;
+  height: 11px;
+  border-radius: 1em;
+  border: 2.5px solid white;
+  background: blue;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+}
+
+.search {
+  width: 100%;
+  height: 3em;
+  background: unset;
+  position: absolute;
+  left: 0;
+  z-index: 999;
+  transition: all .5s cubic-bezier(0.16, 1, 0.29, 0.99) 0s, background 0s ease 0s;
+}
+
+.search-bar {
+  width: 90%;
+  height: inherit;
+  border-radius: 10px;
+  background: white;
+  margin: 0 auto;
+  transition: all .5s cubic-bezier(0.16, 1, 0.29, 0.99) 0s, background 0s ease 0s;
+}
+
+.search-bar .search-tools {
+  height: inherit;
+  text-align: center;
+  float: left;
+  width: 80%;
+}
+
+.search-tools input {
+  outline: 0;
+  width: 100%;
+  font-size: 1em;
+  text-indent: 2px;
+  border: none;
+  height: inherit;
+  background: none;
+  color: #00000057;
+}
+
+.house-options {
+  width: 100%;
+  height: 10em;
+  margin-top: 5em;
+}
+
+.house-options img {
+  width: 100%;
+  scale: .7;
+  transform: translateY(-10px);
+}
+
+.house-options text {
+  position: absolute;
+  transform: translateY(3.6em);
+}
+
+.house-options .card-option {
+  width: 45%;
+  border-radius: 1em;
+  height: inherit;
+  cursor: pointer;
+  background: white;
+/*  box-shadow: 0 0 4em -3em #00000081;*/
+}
+
+.house-options .card-option:first-child {
+  float: left;
+  margin-left: 10px;
+}
+
+.house-options .card-option:last-child {
+  float: right;
+  margin-right: 10px;
+}
+
+.search-bar input::placeholder {
+  color: #00000057;
+  transform: translateY(1.3px);
+}
+
+.search-bar input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.search-bar .search-tools:first-child {
+  width: 10%;
+}
+
+.search-bar .search-tools:last-child {
+  width: 10%;
+}
+
+.browse {
+  width: 100%;
+  margin-top: 2em;
+}
+
+.property-container {
+  height: 20em;
+  width: 100%;
+}
+
+.property {
+  width: 100%;
+  height: inherit;
+}
+
+.property .card-property {
+  width: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  height: 12em;
+  border-radius: 1.2em;
+  box-shadow: 0 0 0 4px white;
+}
+
+.property .property-details {
+  width: 95%;
+  margin: 7px auto;
+}
+
+.property .card-property img {
+  width: 100%;
+  scale: 1.2;
+}
+
+.per {
+  width: 100%;
+}
+
+.property-price {
+  float: right;
+  margin-top: 5px;
+}
+
+.z-details {
+  position: absolute;
+  width: 80%;
+  z-index: 9;
+  border-radius: 1em;
+  height: inherit;
+}
+
+.z-details .distance {
+  width: 7em;
+  padding: 5px;
+  border-radius: 2em;
+  margin-left: 1%;
+  font-size: 15px;
+  margin-top: 1em;
+  letter-spacing: .3px;
+  float: left;
+  color: #ffffffb4;
+  background: #00000076;
+}
+
+.z-details .heart {
+  margin-right: 3%;
+  margin-top: -5px;
+  font-size: 15px;
+  float: right;
+}
+
+.inner-details {
+  width: 10em;
+  height: 1.9em;
+  margin-top: 7px;
+  border-radius: 7px;
+  background: #0088ff15;
+}
+
+.inner-details .span-details {
+  float: left;
+  height: 50%;
+  width: 33.3%;
+  color: #006aff;
+  border-right: 2.3px solid #006aff;
+}
+
+.inner-details .span-details:first-child {
+  width: 33.3%;
+  border-right: 2.3px solid #006aff;
+}
+
+.inner-details .span-details:last-child {
+  width: 33.3%;
+  border-right: none;
+}
+
+.heart img {
+  cursor: pointer;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.ty-5 {
+  transform: translateY(5px);
+}
+
+.ty-10 {
+  transform: translateY(10px);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.nav-bar {
+left: 0;
+bottom: 1.5em;
+width: 100%;
+z-index: 999;
+position: fixed;
+}
+
+.nav-bar .nav {
+  width: 90%;
+  height: 4em;
+  border-radius: 2em;
+  background: black;
+  box-shadow: 0 1em 3.5em 3em white;
+}
+
+.nav-bar .nav .nav-content {
+  width: 90%;
+  margin: 0 auto;
+  height: inherit;
+}
+
+.nav-bar .nav .nav-content button {
+  width: 4em;
+  height: 4em;
+  margin: 0 auto;
+  margin-left: 10%;
+  border: none;
+  background: unset;
+}
+
+.nav-bar .nav .nav-content button .user {
+ transform: translateY(-5px);
+ cursor: pointer;
+}
+
+.nav-content button:first-child {
+  margin-left: 4% !important;
+}
+
+img {
+  -webkit-user-drag: none;
+}
+
+::-webkit-scrollbar {
+display: none;
+}

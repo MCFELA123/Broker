@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+#about {
+  color: rgba(10,10,10,0);
+  transition: color 1s linear 1s;
+}
+
+#about:target {
+  color: rgba(10,10,10,1);
+  transition: color 1s linear 1s;
+}    
+
+</style>
+
+<body>
+
+<a href="#about" onclick="fadeIn()">About</a> 
+
+<div id="div">
+
+<p id='about'> Please help me figure this out. I really appreciate it</p>  
+
+</div>
+
+</body>
+
+<script>
+function fadeIn() {
+var elem = document.getElementById("about");   
+var begin = 0;
+var id = setInterval(frame, 10);
+function frame() {
+  if (begin == 100) {
+    clearInterval(id);
+  } else {
+    begin++; 
+    elem.style.color = begin + '1'; 
+  }
+ }
+}
+</script>
+
+</html>

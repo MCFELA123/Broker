@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="src/css/index.css">
+    <link rel="stylesheet" href="src/css/colors.css">
+    <link rel="stylesheet" href="src/css/icons.css">
+    <link rel="stylesheet" href="src/css/images.css">
+    <link rel="shortcut icon" href="src/icons/bsc.svg" type="image/x-icon">
+    <script src="src/script/scirpt.js"></script>
+    <link rel="manifest" href="src/manifest/manifest.json">
+    <meta name="theme-color" content="#3538CD"/>
+    <meta name="description" content="Crypto News">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broker</title>
+</head>
+<body class="d-flex d-center" id="body">
+    <div class="interface" id="interface">
+        <div class="head">
+            <div class="card-head d-flex d-center ty-5">
+                <div class="user">
+                    <img src="src/img/john-doe.jpg" alt="">
+                    <div class="user-label"></div>
+                </div>
+            </div>
+            <div class="card-head">
+                <small class="text-light">Current Location</small> <br>
+                <img src="src/icons/location.svg" class="location-icon" alt=""> 
+                <text class="normal-text">New Oreleans, US</text>
+            </div>
+            <div class="card-head d-flex d-center ty-10">
+                <img src="src/icons/settings.svg" alt="">
+            </div>
+        </div>
+        <br><br><br>
+    <div class="center">
+        <text class="normal-text h4 heavy">Explore Proterties</text>
+        <br><br>
+        
+           <div class="search" id="search">
+            <div class="search-bar" id="search-bar">
+                <div class="search-tools d-flex d-center">
+                    <img src="src/icons/search.svg" class="text-light" id="location-feed" alt="">
+                </div>
+                <div class="search-tools">
+                    <input type="search" name="search" placeholder="Search for dream home" id="search" onfocus="userLocate()">
+                </div>
+                <div class="search-tools d-flex d-center">
+                    <img src="src/icons/more.svg" class="cursor-pointer" alt="">
+                </div>
+            </div>
+           </div>
+                
+            <div class="house-options">
+                <div class="card-option d-flex d-center">
+                    <img src="src/img/house-rent.png" alt="">
+                    <text class="normal-text">Rent a Home</text>
+                </div>
+                <div class="card-option d-flex d-center">
+                    <img src="src/img/house-buy.png" alt="">
+                    <text class="normal-text">Buy a Home</text>
+                </div>
+            </div>
+            
+                <div class="browse" id="browse">
+                    <div class="property-container">
+                        <div class="property prop">
+                            <div class="card-property d-flex d-center">
+                                <div class="z-details">
+                                    <div class="distance d-flex d-center reg">
+                                        20 miles away
+                                    </div><br>
+                                    <div class="heart">
+                                        <img src="src/icons/heart.svg" alt="">
+                                    </div>
+                                </div>
+                                <img src="src/img/house1.jpg" class="property-img" alt="">
+                            </div>
+                                <div class="property-details">
+                                    <div class="property-price col-blue heavy">
+                                        $ 250,000 USD
+                                    </div>
+                                    <text class="h6">Whitespace House</text> <br>
+                                    <small class="h7">
+                                    <img src="src/icons/location-2.svg" class="location-icon text-light scl-9" alt=""> 
+                                    <text class="reg col-grey">Melbourne, Austriala</text>
+                                  </small>
+                                  <br><div class="inner-details d-flex d-center">
+                                    <div class="span-details d-flex d-center text">
+                                        <small>
+                                            <text>5</text> bdrm
+                                        </small>
+                                    </div>
+                                    <div class="span-details d-flex d-center">
+                                        <small>
+                                            <text>4</text> btrm
+                                        </small>
+                                    </div>
+                                    <div class="span-details d-flex d-center">
+                                        <small class="col-green">
+                                            Avail..
+                                        </small>
+                                    </div>
+                                  </div>
+                                </div>
+                        </div>
+                    </div>
+
+
+                    <div class="property-container">
+                    <div class="property">
+                        <div class="card-property d-flex d-center">
+                            <div class="z-details">
+                                <div class="distance d-flex d-center reg">
+                                    9 kilom.. away
+                                </div><br>
+                                <div class="heart">
+                                    <img src="src/icons/heart.svg" alt="">
+                                </div>
+                            </div>
+                            <img src="src/img/house2.jpg" class="property-img" alt="">
+                        </div>
+                            <div class="property-details">
+                                <div class="property-price col-blue heavy">
+                                    $ 570,000 USD
+                                </div>
+                                <text class="h6">Old trabenk House</text> <br>
+                                <small class="h7">
+                                <img src="src/icons/location-2.svg" class="location-icon text-light scl-9" alt=""> 
+                                <text class="reg col-grey">Toronto, Canada</text>
+                              </small>
+                              <br><div class="inner-details d-flex d-center">
+                                <div class="span-details d-flex d-center text">
+                                    <small>
+                                        <text>6</text> bdrm
+                                    </small>
+                                </div>
+                                <div class="span-details d-flex d-center">
+                                    <small>
+                                        <text>7</text> btrm
+                                    </small>
+                                </div>
+                                <div class="span-details d-flex d-center">
+                                    <small class="red-col">
+                                        sold
+                                    </small>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="property-container">   
+                    <div class="property">
+                        <div class="card-property d-flex d-center">
+                            <div class="z-details">
+                                <div class="distance d-flex d-center reg">
+                                    20 miles away
+                                </div><br>
+                                <div class="heart">
+                                    <img src="src/icons/heart.svg" alt="">
+                                </div>
+                            </div>
+                            <img src="src/img/house3.webp" class="property-img" alt="">
+                        </div>
+                            <div class="property-details">
+                                <div class="property-price col-blue heavy">
+                                    $ 250,000 USD
+                                </div>
+                                <text class="h6">Whitespace House</text> <br>
+                                <small class="h7">
+                                <img src="src/icons/location-2.svg" class="location-icon text-light scl-9" alt=""> 
+                                <text class="reg col-grey">Melbourne, Austriala</text>
+                              </small>
+                              <br><div class="inner-details d-flex d-center">
+                                <div class="span-details d-flex d-center text">
+                                    <small>
+                                        <text>5</text> bdrm
+                                    </small>
+                                </div>
+                                <div class="span-details d-flex d-center">
+                                    <small>
+                                        <text>4</text> btrm
+                                    </small>
+                                </div>
+                                <div class="span-details d-flex d-center">
+                                    <small class="col-green">
+                                        Avail..
+                                    </small>
+                                </div>
+                              </div>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="property-container">
+                    <div class="property">
+                        <div class="card-property d-flex d-center">
+                            <div class="z-details">
+                                <div class="distance d-flex d-center reg">
+                                    20 miles away
+                                </div><br>
+                                <div class="heart">
+                                    <img src="src/icons/heart.svg" alt="">
+                                </div>
+                            </div>
+                            <img src="src/img/house 4.jpg" class="property-img" alt="">
+                        </div>
+                            <div class="property-details">
+                                <div class="property-price col-blue heavy">
+                                    $ 250,000 USD
+                                </div>
+                                <text class="h6">Whitespace House</text> <br>
+                                <small class="h7">
+                                <img src="src/icons/location-2.svg" class="location-icon text-light scl-9" alt=""> 
+                                <text class="reg col-grey">Melbourne, Austriala</text>
+                              </small>
+                              <br><div class="inner-details d-flex d-center">
+                                <div class="span-details d-flex d-center text">
+                                    <small>
+                                        <text>5</text> bdrm
+                                    </small>
+                                </div>
+                                <div class="span-details d-flex d-center">
+                                    <small>
+                                        <text>4</text> btrm
+                                    </small>
+                                </div>
+                                <div class="span-details d-flex d-center">
+                                    <small class="col-green">
+                                        Avail..
+                                    </small>
+                                </div>
+                              </div>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="property-container">
+                    <div class="property">
+                        <div class="card-property d-flex d-center">
+                            <div class="z-details">
+                                <div class="distance d-flex d-center reg">
+                                    20 miles away
+                                </div><br>
+                                <div class="heart">
+                                    <img src="src/icons/heart.svg" alt="">
+                                </div>
+                            </div>
+                            <img src="src/img/house6.jpeg" class="property-img" alt="">
+                        </div>
+                            <div class="property-details">
+                                <div class="property-price col-blue heavy">
+                                    $ 250,000 USD
+                                </div>
+                                <text class="h6">Whitespace House</text> <br>
+                                <small class="h7">
+                                <img src="src/icons/location-2.svg" class="location-icon text-light scl-9" alt=""> 
+                                <text class="reg col-grey">Melbourne, Austriala</text>
+                              </small>
+                              <br><div class="inner-details d-flex d-center">
+                                <div class="span-details d-flex d-center text">
+                                    <small>
+                                        <text>5</text> bdrm
+                                    </small>
+                                </div>
+                                <div class="span-details d-flex d-center">
+                                    <small>
+                                        <text>4</text> btrm
+                                    </small>
+                                </div>
+                                <div class="span-details d-flex d-center">
+                                    <small class="col-green">
+                                        Avail..
+                                    </small>
+                                </div>
+                              </div>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="property-container">
+                    <div class="property">
+                        <div class="card-property d-flex d-center">
+                            <div class="z-details">
+                                <div class="distance d-flex d-center reg">
+                                    20 miles away
+                                </div><br>
+                                <div class="heart">
+                                    <img src="src/icons/heart.svg" alt="">
+                                </div>
+                            </div>
+                            <img src="src/img/house7.jpeg" class="property-img" alt="">
+                        </div>
+                            <div class="property-details">
+                                <div class="property-price col-blue heavy">
+                                    $ 250,000 USD
+                                </div>
+                                <text class="h6">Whitespace House</text> <br>
+                                <small class="h7">
+                                <img src="src/icons/location-2.svg" class="location-icon text-light scl-9" alt=""> 
+                                <text class="reg col-grey">Melbourne, Austriala</text>
+                              </small>
+                              <br><div class="inner-details d-flex d-center">
+                                <div class="span-details d-flex d-center text">
+                                    <small>
+                                        <text>5</text> bdrm
+                                    </small>
+                                </div>
+                                <div class="span-details d-flex d-center">
+                                    <small>
+                                        <text>4</text> btrm
+                                    </small>
+                                </div>
+                                <div class="span-details d-flex d-center">
+                                    <small class="col-green">
+                                        Avail..
+                                    </small>
+                                </div>
+                              </div>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="property-container">
+                    <div class="property">
+                        <div class="card-property d-flex d-center">
+                            <div class="z-details">
+                                <div class="distance d-flex d-center reg">
+                                    20 miles away
+                                </div><br>
+                                <div class="heart">
+                                    <img src="src/icons/heart.svg" alt="">
+                                </div>
+                            </div>
+                            <img src="src/img/house8.avif" class="property-img" alt="">
+                        </div>
+                            <div class="property-details">
+                                <div class="property-price col-blue heavy">
+                                    $ 250,000 USD
+                                </div>
+                                <text class="h6">Whitespace House</text> <br>
+                                <small class="h7">
+                                <img src="src/icons/location-2.svg" class="location-icon text-light scl-9" alt=""> 
+                                <text class="reg col-grey">Melbourne, Austriala</text>
+                              </small>
+                              <br><div class="inner-details d-flex d-center">
+                                <div class="span-details d-flex d-center text">
+                                    <small>
+                                        <text>5</text> bdrm
+                                    </small>
+                                </div>
+                                <div class="span-details d-flex d-center">
+                                    <small>
+                                        <text>4</text> btrm
+                                    </small>
+                                </div>
+                                <div class="span-details d-flex d-center">
+                                    <small class="col-green">
+                                        Avail..
+                                    </small>
+                                </div>
+                              </div>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="property-container">
+                    <div class="property">
+                        <div class="card-property d-flex d-center">
+                            <div class="z-details">
+                                <div class="distance d-flex d-center reg">
+                                    20 miles away
+                                </div><br>
+                                <div class="heart">
+                                    <img src="src/icons/heart.svg" alt="">
+                                </div>
+                            </div>
+                            <img src="src/img/house9.jpg" class="property-img" alt="">
+                        </div>
+                            <div class="property-details">
+                                <div class="property-price col-blue heavy">
+                                    $ 250,000 USD
+                                </div>
+                                <text class="h6">Whitespace House</text> <br>
+                                <small class="h7">
+                                <img src="src/icons/location-2.svg" class="location-icon text-light scl-9" alt=""> 
+                                <text class="reg col-grey">Melbourne, Austriala</text>
+                              </small>
+                              <br><div class="inner-details d-flex d-center">
+                                <div class="span-details d-flex d-center text">
+                                    <small>
+                                        <text>5</text> bdrm
+                                    </small>
+                                </div>
+                                <div class="span-details d-flex d-center">
+                                    <small>
+                                        <text>4</text> btrm
+                                    </small>
+                                </div>
+                                <div class="span-details d-flex d-center">
+                                    <small class="col-green">
+                                        Avail..
+                                    </small>
+                                </div>
+                              </div>
+                            </div>
+                    </div>
+                </div>
+
+
+
+
+
+                </div>
+
+
+
+
+        </div>
+
+<script>
+function userLocate() {
+  var user_loc_icon = document.getElementById("location-feed");
+  var search = document.getElementById("search");
+
+  if(search.focus) {
+    user_loc_icon.src = 'src/icons/user-location.svg';
+  }
+
+  else {
+    reundo;
+  }
+
+}
+
+function reundo() {
+    document.getElementById("body").onclick = deo;
+}
+
+function deo() {
+    document.getElementById("location-feed").src = 'src/icons/search.svg';
+}
+
+</script>
+
+
+
+        <nav class="nav-bar d-flex d-center">
+            <div class="nav">
+                <div class="nav-content d-flex d-center">
+                    <button>
+                        <img src="src/icons/home.svg" alt="">
+                    </button>
+                    <button>
+                        <img src="src/icons/apps.svg" alt="">
+                    </button>
+                    <button>
+                        <img src="src/icons/likes.svg" alt="">
+                    </button>
+                    <button>
+                        <div class="card-head d-flex d-center ty-5">
+                            <div class="user">
+                                <img src="src/img/john-doe.jpg" alt="">
+                                <div class="user-label"></div>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+
+
+    </div>
+
+
+</body>
+</html>

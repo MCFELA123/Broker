@@ -1,0 +1,20 @@
+.icon {
+
+    transition: all .5s cubic-bezier(0.16, 1, 0.29, 0.99) 0s, background 0s ease 0s;
+}
+
+.heart {
+    filter: drop-shadow(0 0 3px #000000bc);
+}
+
+.location-icon {
+    transform: translateY(4px);
+}
+
+.visible-hidden {
+    display: none;
+}
+
+.visible-hide {
+    display: none !important;
+}
